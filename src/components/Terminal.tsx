@@ -9,10 +9,13 @@ const TerminalWindow = styled(motion.div)`
   width: 90%;
   max-width: 900px;
   min-height: 500px;
+  flex-grow: 1;
   background-color: #1a1a1a;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
 `;
 
 const TerminalHeader = styled.div`
@@ -48,6 +51,8 @@ const TerminalBody = styled.div`
   color: #f0f0f0;
   font-size: 16px;
   line-height: 1.5;
+  flex-grow: 1;
+  overflow-y: auto;
 `;
 
 const ProfileContent = styled(motion.div)`
@@ -115,13 +120,12 @@ const ProjectDetails = styled.div`
 `;
 
 const SocialLinks = styled(motion.div)`
-  position: absolute;
-  bottom: 20px;
-  left: 15px;
-  right: 15px;
+  width: 100%;
+  padding: 10px 15px 20px 15px;
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-shrink: 0;
 `;
 
 const SocialIcon = styled(motion.a)`

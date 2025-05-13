@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Terminal from './components/Terminal';
+import Layout from './components/Layout';
 
 function App() {
   return (
     <div className="App">
-      <Terminal />
+      <Layout />
     </div>
   );
 }
